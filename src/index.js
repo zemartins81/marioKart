@@ -14,6 +14,17 @@ const player2 = {
   points: 0,
 }
 
-function rollDice() {
+async function rollDice() {
   return Math.floor(Math.random() * 6) + 1;
 }
+
+async function playRaceEngine(character1, character2) {
+
+}
+
+(async function main() {
+  console.log(`🏁🚨 Corrida entre ${player1.name} e ${player2.name} iniciando... \n`);
+
+  await playRaceEngine(player1, player2);
+
+})(); //Função auto invocável
